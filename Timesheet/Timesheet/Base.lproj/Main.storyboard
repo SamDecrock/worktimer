@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Timesheet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywv-S1-AaL">
+                                <rect key="frame" x="172" y="51" width="132" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.68818844010000002" blue="0.081322719670000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="eCC-Ci-OtE"/>
+                                </constraints>
+                                <state key="normal" title="aankomst">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnArriving_touchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YzT-dd-G3e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B85-Ix-DLE">
+                                <rect key="frame" x="172" y="179" width="132" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.68627450980392157" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="vQ7-qJ-RA3"/>
+                                </constraints>
+                                <state key="normal" title="start pauze">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStartPauze_touchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yta-aT-vLZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdj-c4-kZx">
+                                <rect key="frame" x="172" y="273" width="132" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.68818844010000002" blue="0.081322719670000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="G08-na-ngq"/>
+                                </constraints>
+                                <state key="normal" title="einde pauze">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnEndPauze_touchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gaz-Ou-XsL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MS-er-CcB">
+                                <rect key="frame" x="172" y="392" width="132" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.68818844010000002" blue="0.081322719670000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="RSq-Jg-lEh"/>
+                                </constraints>
+                                <state key="normal" title="vertrek">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDeparture_touchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89w-gf-wea"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 uur" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRH-Rf-Fdd">
+                                <rect key="frame" x="172" y="451" width="132" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="kFA-v4-agq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5dg-UH-kf7">
+                                <rect key="frame" x="14" y="26" width="150" height="80"/>
+                                <subviews>
+                                    <datePicker clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zhA-C5-Imb">
+                                        <rect key="frame" x="0.0" y="-68" width="150" height="216"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="510665865.79974699">
+                                            <!--2017-03-08 11:37:45 +0000-->
+                                        </date>
+                                        <connections>
+                                            <action selector="pickerStart_changed:" destination="BYZ-38-t0r" eventType="valueChanged" id="dnZ-NV-otc"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zhA-C5-Imb" secondAttribute="trailing" id="2f9-q9-oiy"/>
+                                    <constraint firstAttribute="bottom" secondItem="zhA-C5-Imb" secondAttribute="bottom" constant="-68" id="Q01-4R-NpX"/>
+                                    <constraint firstItem="zhA-C5-Imb" firstAttribute="top" secondItem="5dg-UH-kf7" secondAttribute="top" constant="-68" id="Xeg-gT-gf3"/>
+                                    <constraint firstAttribute="height" constant="80" id="hzs-kW-YrZ"/>
+                                    <constraint firstItem="zhA-C5-Imb" firstAttribute="leading" secondItem="5dg-UH-kf7" secondAttribute="leading" id="n0E-JP-drc"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FkB-iM-jjR">
+                                <rect key="frame" x="14" y="154" width="150" height="80"/>
+                                <subviews>
+                                    <datePicker clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="keG-WH-79h">
+                                        <rect key="frame" x="0.0" y="-68" width="150" height="216"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="510665865.79974699">
+                                            <!--2017-03-08 11:37:45 +0000-->
+                                        </date>
+                                        <connections>
+                                            <action selector="pickerStartPauze_changed:" destination="BYZ-38-t0r" eventType="valueChanged" id="fRc-O9-eln"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="keG-WH-79h" firstAttribute="leading" secondItem="FkB-iM-jjR" secondAttribute="leading" id="2Wi-lg-YbT"/>
+                                    <constraint firstAttribute="trailing" secondItem="keG-WH-79h" secondAttribute="trailing" id="5ls-hD-bM2"/>
+                                    <constraint firstAttribute="height" constant="80" id="URb-zG-Za9"/>
+                                    <constraint firstAttribute="bottom" secondItem="keG-WH-79h" secondAttribute="bottom" constant="-68" id="VgS-CE-D5i"/>
+                                    <constraint firstItem="keG-WH-79h" firstAttribute="top" secondItem="FkB-iM-jjR" secondAttribute="top" constant="-68" id="xu3-9l-uHM"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s9Z-CO-Qng">
+                                <rect key="frame" x="14" y="248" width="150" height="80"/>
+                                <subviews>
+                                    <datePicker clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zQz-T2-58E">
+                                        <rect key="frame" x="0.0" y="-68" width="150" height="216"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="510665865.79974699">
+                                            <!--2017-03-08 11:37:45 +0000-->
+                                        </date>
+                                        <connections>
+                                            <action selector="pickerEndPauze_changed:" destination="BYZ-38-t0r" eventType="valueChanged" id="fw5-gE-kdx"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="zQz-T2-58E" firstAttribute="top" secondItem="s9Z-CO-Qng" secondAttribute="top" constant="-68" id="8oR-Cp-dmT"/>
+                                    <constraint firstAttribute="bottom" secondItem="zQz-T2-58E" secondAttribute="bottom" constant="-68" id="EfJ-gY-m9I"/>
+                                    <constraint firstItem="zQz-T2-58E" firstAttribute="leading" secondItem="s9Z-CO-Qng" secondAttribute="leading" id="FAF-7D-isw"/>
+                                    <constraint firstAttribute="trailing" secondItem="zQz-T2-58E" secondAttribute="trailing" id="sBw-vf-h9b"/>
+                                    <constraint firstAttribute="height" constant="80" id="sDy-Kr-cDW"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVU-p5-XB3">
+                                <rect key="frame" x="14" y="367" width="150" height="80"/>
+                                <subviews>
+                                    <datePicker clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gbk-Qb-WaX">
+                                        <rect key="frame" x="0.0" y="-68" width="150" height="216"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="510665865.79974699">
+                                            <!--2017-03-08 11:37:45 +0000-->
+                                        </date>
+                                        <connections>
+                                            <action selector="pickerDeparture_changed:" destination="BYZ-38-t0r" eventType="valueChanged" id="lP1-5E-5Ji"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="gbk-Qb-WaX" firstAttribute="leading" secondItem="dVU-p5-XB3" secondAttribute="leading" id="GJN-Ws-LxM"/>
+                                    <constraint firstAttribute="trailing" secondItem="gbk-Qb-WaX" secondAttribute="trailing" id="Nuu-Ho-gzg"/>
+                                    <constraint firstItem="gbk-Qb-WaX" firstAttribute="top" secondItem="dVU-p5-XB3" secondAttribute="top" constant="-68" id="POz-tE-JM5"/>
+                                    <constraint firstAttribute="bottom" secondItem="gbk-Qb-WaX" secondAttribute="bottom" constant="-68" id="hW4-Di-UTE"/>
+                                    <constraint firstAttribute="height" constant="80" id="nk8-el-wsj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FkB-iM-jjR" firstAttribute="centerY" secondItem="B85-Ix-DLE" secondAttribute="centerY" id="0fZ-Qc-QiP"/>
+                            <constraint firstItem="dVU-p5-XB3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-2" id="4fh-I1-jI7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ywv-S1-AaL" secondAttribute="trailing" id="7YG-RP-5Cj"/>
+                            <constraint firstItem="5dg-UH-kf7" firstAttribute="centerY" secondItem="ywv-S1-AaL" secondAttribute="centerY" id="GbM-wO-ibb"/>
+                            <constraint firstItem="0MS-er-CcB" firstAttribute="leading" secondItem="dVU-p5-XB3" secondAttribute="trailing" constant="8" id="HTE-d1-Vbb"/>
+                            <constraint firstItem="Sdj-c4-kZx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="253" id="Kyd-qL-XCN"/>
+                            <constraint firstItem="0MS-er-CcB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="372" id="M0I-F2-C6E"/>
+                            <constraint firstItem="B85-Ix-DLE" firstAttribute="leading" secondItem="FkB-iM-jjR" secondAttribute="trailing" constant="8" id="Pag-B5-YHB"/>
+                            <constraint firstItem="ywv-S1-AaL" firstAttribute="leading" secondItem="5dg-UH-kf7" secondAttribute="trailing" constant="8" id="RdY-Ew-mpL"/>
+                            <constraint firstItem="FkB-iM-jjR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-2" id="SjY-6N-qme"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DRH-Rf-Fdd" secondAttribute="bottom" constant="8" id="eHk-po-XGg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0MS-er-CcB" secondAttribute="trailing" id="fsE-Az-zDk"/>
+                            <constraint firstItem="ywv-S1-AaL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="gxk-8d-F9y"/>
+                            <constraint firstItem="dVU-p5-XB3" firstAttribute="centerY" secondItem="0MS-er-CcB" secondAttribute="centerY" id="hsV-Tu-h4P"/>
+                            <constraint firstItem="B85-Ix-DLE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="159" id="ig4-Ae-1ds"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DRH-Rf-Fdd" secondAttribute="trailing" id="koJ-Ow-Iv3"/>
+                            <constraint firstItem="s9Z-CO-Qng" firstAttribute="centerY" secondItem="Sdj-c4-kZx" secondAttribute="centerY" id="lvd-lz-VIQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B85-Ix-DLE" secondAttribute="trailing" id="n8H-sQ-EYY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Sdj-c4-kZx" secondAttribute="trailing" id="vTS-9m-ttg"/>
+                            <constraint firstItem="5dg-UH-kf7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-2" id="xuJ-cb-dLI"/>
+                            <constraint firstItem="Sdj-c4-kZx" firstAttribute="leading" secondItem="s9Z-CO-Qng" secondAttribute="trailing" constant="8" id="z90-Ta-Bmb"/>
+                            <constraint firstItem="s9Z-CO-Qng" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-2" id="zqC-tk-6Xh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblTotalHours" destination="DRH-Rf-Fdd" id="J2f-9c-lhd"/>
+                        <outlet property="picerkEndPauze" destination="zQz-T2-58E" id="5tY-Ka-Ip9"/>
+                        <outlet property="pickerDeparture" destination="gbk-Qb-WaX" id="Lff-vu-MnD"/>
+                        <outlet property="pickerStart" destination="zhA-C5-Imb" id="Lqb-J1-USI"/>
+                        <outlet property="pickerStartPauze" destination="keG-WH-79h" id="6Ar-cP-ohx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="138.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PKn-Ra-QT6">
+            <objects>
+                <viewController id="4Go-Hu-1rq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ceV-Hr-Jwu"/>
+                        <viewControllerLayoutGuide type="bottom" id="dwc-Pe-lKT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XDN-bl-wdj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uNc-vH-OOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808" y="153"/>
+        </scene>
+    </scenes>
+</document>
